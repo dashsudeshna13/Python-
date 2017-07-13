@@ -9,3 +9,11 @@ If we want to send a list of recommendations or new uploads to users we can do t
 
 •	Datetime
 Every time a mail is sent, a timestamp is created and it is saved in a csv file along with a flag/status variable. The status variable shows the sent/not sent status of a mail to the user. This ensures that the same mail is not sent to the user again. Also the mail is sent only if the status is ‘not sent’ for a particular user, and it is updated to ‘sent’ after the mail is sent.
+
+
+PDF generator
+
+•	Wrote a script in Python which generates PDF with all required formatting needed in the pdf. Specifically my code generated Title and Reference page with Noteshare logo watermarked on each of the page. 
+•	The notes pdf is also shrunk from sides creating space for margin, page no. and links to be inserted.
+•	The first and last pages are then merged (or appended) to the notes pdf, with Title page at the front and Reference at the end.
+•	The entire process takes roughly 10- 12 seconds for a pdf of size around 6 MB.
